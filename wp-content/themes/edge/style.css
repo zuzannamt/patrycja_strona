@@ -2827,3 +2827,12 @@ div.bbp-template-notice, div.indicator-hint {
 	margin-right: auto;
 	margin-top: -30px;
 }
+
+/*instagram widget */
+#wdi_feed_0 .wdi_load_more .wdi_load_more_text { color: #f79d9b ;}
+#wdi_feed_0 .wdi_load_more .wdi_load_more_wrap { border-color: #f79d9b ;}
+#wdi_feed_0 .wdi_load_more .image_browser_photo_caption_hover_color { color: #f79d9b ;}
+#wdi_feed_0 .wdi_single_user .wdi_header_user_text > h3 { color: #333; }
+#wdi_feed_0 .wdi_single_user .wdi_user_controls .wdi_follow_btn {
+	border-color: #f79d9b;
+	color: #f79d9b; }

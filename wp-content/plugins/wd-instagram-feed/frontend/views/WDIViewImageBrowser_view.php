@@ -34,7 +34,7 @@ public function display(){
 				<div id="wdi_feed_<?php echo $wdi_feed_counter?>_header" class='wdi_feed_header'></div>
 				<div id="wdi_feed_<?php echo $wdi_feed_counter?>_users" class='wdi_feed_users'></div>
 			</div>
-			<?php 
+			<?php
 				if($feed_row['feed_display_view']==='pagination' && $style['pagination_position_vert']==='top'){
 					?><div id="wdi_pagination" class="wdi_pagination"><div class="wdi_pagination_container"><i id="wdi_first_page" title="<?php echo __('First Page',"wdi")?>" class="fa fa-step-backward wdi_pagination_ctrl wdi_disabled"></i><i id="wdi_prev" title="<?php echo __('Previous Page',"wdi")?>" class="fa fa-arrow-left wdi_pagination_ctrl"></i><i id="wdi_current_page" class="wdi_pagination_ctrl" style="font-style:normal">1</i><i id="wdi_next" title="<?php echo __('Next Page',"wdi")?>" class="fa fa-arrow-right wdi_pagination_ctrl"></i> <i id="wdi_last_page" title="<?php echo __('Last Page',"wdi")?>" class="fa fa-step-forward wdi_pagination_ctrl wdi_disabled"></i></div></div> <?php
 				}
@@ -50,7 +50,7 @@ public function display(){
 				if($style['pagination_position_vert']==='bottom'){
 					?><div id="wdi_pagination" class="wdi_pagination"><div class="wdi_pagination_container"><i id="wdi_first_page" title="<?php echo __('First Page',"wdi")?>" class="fa fa-step-backward wdi_pagination_ctrl wdi_disabled"></i><i id="wdi_prev" title="<?php echo __('Previous Page',"wdi")?>" class="fa fa-arrow-left wdi_pagination_ctrl"></i><i id="wdi_current_page" class="wdi_pagination_ctrl" style="font-style:normal">1</i><i id="wdi_next" title="<?php echo __('Next Page',"wdi")?>" class="fa fa-arrow-right wdi_pagination_ctrl"></i> <i id="wdi_last_page" title="<?php echo __('Last Page',"wdi")?>" class="fa fa-step-forward wdi_pagination_ctrl wdi_disabled"></i></div></div> <?php
 				}
-				
+
 				break;
 			}
 			case 'infinite_scroll':{
@@ -86,7 +86,7 @@ public function generate_feed_styles($feed_row){
 	<style type="text/css">
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_feed_container {
 		min-width: 160px;
-	    width: <?php echo $style['feed_container_width']?>; 
+	    width: <?php echo $style['feed_container_width']?>;
 	    margin: 0 auto;
 	    background-color: <?php echo $style['feed_container_bg_color']?>;/*feed_container_bg_color*/
 		border-bottom: 5px solid <?php echo $style['feed_container_bg_color']?>;/*feed_container_bg_color*/;
@@ -138,20 +138,20 @@ public function generate_feed_styles($feed_row){
 	    /*margin: 0 0 0 -100% !important;*/
 		position: relative;
 	}
-	<?php 
-	
+	<?php
+
 	if($feed_row['display_user_post_follow_number'] == '1'){
 		$header_text_padding =(intval($style['user_img_width']) - intval($style['users_text_font_size']))/4;
 	}else{
 		$header_text_padding =(intval($style['user_img_width']) - intval($style['users_text_font_size']))/2;
-	}	
+	}
 	?>
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_header_user_text {
     	display: inline-block;
     	float: left;
     	width: 100%;
     	padding-top: <?php echo $header_text_padding; ?>px;
-    	
+
 	}
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_header_user_text h3 {
 		margin-top: <?php echo $header_text_padding ?>px;
@@ -186,8 +186,8 @@ public function generate_feed_styles($feed_row){
 		overflow: hidden;
 		display: block;
 	}
-	
-	
+
+
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_header_user_text h3{
 		margin-left: 10px;
 		margin-bottom: 0px;
@@ -208,19 +208,19 @@ public function generate_feed_styles($feed_row){
 			display: inline-block;
 			vertical-align: middle;
 	}
-	
+
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_bio{
 		color: <?php echo $style['users_text_color']?>;/*header_text_color*/
 		font-size: <?php echo $style['user_description_font_size']?>;/*header_text_color*/
 		float: left;
 	}
 
-	
+
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_followers{
 		margin-left: 5px;
 	}
-	
-	
+
+
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_follow_btn{
 			display: inline-block;
 			background: 0 0;
@@ -253,7 +253,7 @@ public function generate_feed_styles($feed_row){
 		z-index: 2;
 		top: 0;
 		left: 0;
-		width: <?php echo $style['user_img_width'];?>px;/*user_img_width*/ 
+		width: <?php echo $style['user_img_width'];?>px;/*user_img_width*/
 		height: <?php echo $style['user_img_width'];?>px;/*user_img_width*/
 		opacity: 0;
 		border-radius: <?php echo $style['user_border_radius']?>px;/*user_img_width*/
@@ -266,7 +266,7 @@ public function generate_feed_styles($feed_row){
 	}
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_filter_icon span{
 		display: block;
-		width: <?php echo $style['user_img_width'];?>px;/*header_img_width*/ 
+		width: <?php echo $style['user_img_width'];?>px;/*header_img_width*/
 		height: <?php echo $style['user_img_width'];?>px;/*header_img_width*/
 		font-size: 25px;
 		color: white;
@@ -280,7 +280,7 @@ public function generate_feed_styles($feed_row){
 		left: 0;
 		top: 0;
 		bottom: 0;
-		margin: auto; 
+		margin: auto;
 	}
 
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_photo_wrap {
@@ -310,21 +310,21 @@ public function generate_feed_styles($feed_row){
 	    padding-bottom: 10px;
 	}
 
-	
+
 
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_thumb_likes{
 		width: <?php echo ($style['image_browser_photo_meta_one_line']=='1')? '50%' : '100%' ?>;/*photo_meta_one_line==false else 100%*/
 		float: <?php echo ($style['image_browser_photo_meta_one_line']=='1')? 'left' : 'none'?>;/*photo_meta_one_line==true else float none*/
 		font-size: <?php echo $style['image_browser_like_comm_font_size']?>;/*photo_caption_font_size*/;
 		color: <?php echo $style['image_browser_like_text_color']?>;/*like_text_color*/
-		
+
 	}
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_thumb_comments{
 		width: <?php echo ($style['image_browser_photo_meta_one_line']=='1')? '50%' : '100%' ?>;/*photo_meta_one_line==false else 100%*/
 		float: <?php echo ($style['image_browser_photo_meta_one_line']=='1')? 'left' : 'none'?>;/*photo_meta_one_line==true else float none*/
 		font-size: <?php echo $style['image_browser_like_comm_font_size']?>;/*photo_caption_font_size*/;
 		color: <?php echo $style['image_browser_comment_text_color']?>;/*comment_text_color*/
-		
+
 	}
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_thumb_comments i,#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_thumb_likes i{
 		width: 100%;
@@ -381,7 +381,7 @@ public function generate_feed_styles($feed_row){
 		background-color: <?php echo $style['load_more_wrap_hover_color']?>;/*load_more_wrap_hover_color*/
 	}
 	#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_pagination{
-		-webkit-user-select: none; /* Chrome/Safari */        
+		-webkit-user-select: none; /* Chrome/Safari */
 		-moz-user-select: none; /* Firefox */
 		-ms-user-select: none; /* IE10+ */
 
@@ -420,11 +420,11 @@ public function generate_feed_styles($feed_row){
 			overflow: hidden;
 		}
 		#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_feed_container {
-		    width: 100%; 
+		    width: 100%;
 		    margin: 0 auto;
 		    background-color: <?php echo $style['feed_container_bg_color']?>;/*feed_container_bg_color*/
 		}
-		
+
 	}
 	@media screen and (min-width: 480px) and (max-width:800px){
 		#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_feed_item{
@@ -434,7 +434,7 @@ public function generate_feed_styles($feed_row){
 			overflow: hidden;
 		}
 		#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_feed_container {
-		    width: 100%; 
+		    width: 100%;
 		    margin: 0 auto;
 		    background-color: <?php echo $style['feed_container_bg_color']?>;/*feed_container_bg_color*/
 		}
@@ -447,7 +447,7 @@ public function generate_feed_styles($feed_row){
 			overflow: hidden;
 		}
 		#wdi_feed_<?php echo $wdi_feed_counter?> .wdi_feed_container {
-		    width: 100%; 
+		    width: 100%;
 		    margin: 0 auto;
 		    background-color: <?php echo $style['feed_container_bg_color']?>;/*feed_container_bg_color*/
 		}
