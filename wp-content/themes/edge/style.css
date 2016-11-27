@@ -2810,3 +2810,6 @@ div.bbp-template-notice, div.indicator-hint {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/*main page gallery 2 plugin*/
+#grid-gallery-2 { margin-top: -54px; }
