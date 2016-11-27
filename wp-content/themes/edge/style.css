@@ -1228,7 +1228,7 @@ img#wpstats {
 /* 18.0 Content
 ================================================== */
 #content {
-	padding: 70px 0 30px;
+	padding: 0px;
 }
 #main ul {
 	list-style-type: disc;
