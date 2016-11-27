@@ -39,11 +39,7 @@ $footer_column = $edge_settings['edge_footer_column_section'];
 				echo '<div class="column-'.$footer_column.'">';
 					if ( is_active_sidebar( 'edge_footer_2' ) ) :
 						dynamic_sidebar( 'edge_footer_2' );
-					endif;
-					if($edge_settings['edge_top_social_icons'] == 0):
-						echo '<div class="header-social-block">';
-							do_action('social_links');
-						echo '</div>'.'<!-- end .header-social-block -->';
+						do_action('social_links');
 					endif;
 				echo '</div><!--end .column'.$footer_column.'  -->';
 				}

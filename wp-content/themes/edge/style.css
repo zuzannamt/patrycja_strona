@@ -2277,6 +2277,12 @@ input.search-field {
 	padding-bottom: 0px;
 }
 
+#colophon .widget_nav_menu,
+#colophon .widget_text, .widget_contact {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Footer column
 ================================================== */
 .column-4 {
@@ -2284,7 +2290,8 @@ input.search-field {
 	padding: 0 20px 40px;
 }
 .column-4 {
-	width: 25%;
+	/*width: 25%;*/
+	width: 33%;
 }
 .column-4:nth-child(4n+5) {
  	clear: both;
@@ -2813,3 +2820,10 @@ div.bbp-template-notice, div.indicator-hint {
 
 /*main page gallery 2 plugin*/
 #grid-gallery-2 { margin-top: -54px; }
+
+/*socila links*/
+.social-links {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -30px;
+}
