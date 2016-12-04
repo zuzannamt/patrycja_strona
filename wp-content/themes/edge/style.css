@@ -1042,7 +1042,7 @@ img#wpstats {
 	color: #FFF;
 }
 .social-links a[href*="instagram.com"]:hover {
-	background-color: #8E6051;
+	background-color: #f79d9b;
 	color: #FFF;
 }
 .social-links a[href*="flickr.com"]:hover {
@@ -2840,8 +2840,3 @@ div.bbp-template-notice, div.indicator-hint {
 /*socoal links*/
 .social-links a { width: 150px; }
 .fa-instagram { padding-right: 10px; }
-
-
-
-
-
