@@ -129,7 +129,7 @@ function edge_social_links() { ?>
 			echo '<a target="_blank" href="'.esc_url($edge_settings['edge_social_dribbble']).'"><i class="fa fa-dribbble"></i></a>';
 		endif;
 		if( !empty($edge_settings['edge_social_instagram']) ):
-			echo '<a target="_blank" href="'.esc_url($edge_settings['edge_social_instagram']).'"><i class="fa fa-instagram"></i></a>';
+			echo '<a target="_blank" href="'.esc_url($edge_settings['edge_social_instagram']).'"><i class="fa fa-instagram"></i>p.pankiewicz</a>';
 		endif;
 		if( !empty($edge_settings['edge_social_flickr']) ):
 			echo '<a target="_blank" href="'.esc_url($edge_settings['edge_social_flickr']).'"><i class="fa fa-flickr"></i></a>';
