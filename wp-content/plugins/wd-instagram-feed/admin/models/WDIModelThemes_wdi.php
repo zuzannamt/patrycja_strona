@@ -33,7 +33,7 @@ class WDIModelThemes_wdi {
       $limit = 0;
     }
     $query = "SELECT * FROM " . $wpdb->prefix . WDI_THEME_TABLE .' '. $where . $order_by . " LIMIT " . $limit . ",20";
- 
+
     $rows = $wpdb->get_results($query);
     return $rows;
   }
@@ -55,7 +55,7 @@ class WDIModelThemes_wdi {
   }
 
   public static function get_theme_defaults(){
-  global $wdi_options; 
+  global $wdi_options;
   $settings = array(
     'theme_name' => 'Instagram Design',
     'default_theme'=> '0',
@@ -233,7 +233,7 @@ class WDIModelThemes_wdi {
     'th_overlay_hover_transparent'=>'50',
     'th_overlay_hover_icon_color'=>'#FFFFFF',
     'th_overlay_hover_icon_font_size'=>'25px',
-    
+
     'th_photo_img_hover_effect' => 'none',
     //////////////////////////////////////////////////////////
     'mas_photo_wrap_padding' => '10px',
@@ -254,7 +254,7 @@ class WDIModelThemes_wdi {
     'mas_overlay_hover_transparent'=>'50',
     'mas_overlay_hover_icon_color'=>'#FFFFFF',
     'mas_overlay_hover_icon_font_size'=>'25px',
-    
+
     'mas_photo_img_hover_effect' => 'none',
     /////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////
@@ -283,14 +283,14 @@ class WDIModelThemes_wdi {
     'image_browser_photo_wrap_bg_color' => '#FFFFFF',
     'image_browser_photo_meta_bg_color' => '#FFFFFF',
     'image_browser_photo_meta_one_line' => '1',
-    'image_browser_like_text_color' => '#8a8d8e',
-    'image_browser_comment_text_color' => '#8a8d8e',
+    'image_browser_like_text_color' => '#f79d9b',
+    'image_browser_comment_text_color' => '#f79d9b',
     'image_browser_photo_caption_font_size' => '16px',
     'image_browser_photo_caption_color' => '#125688',
     'image_browser_feed_item_margin' => '0',
-    'image_browser_photo_caption_hover_color' =>'#8e8e8e',
+    'image_browser_photo_caption_hover_color' =>'#f79d9b',
     'image_browser_like_comm_font_size' => '20px',
-    
+
     'load_more_position' => 'center',
     'load_more_padding' => '4px',
     'load_more_bg_color' => '#ffffff',
@@ -299,7 +299,7 @@ class WDIModelThemes_wdi {
     'load_more_width' => '90px',
     'load_more_border_size' => '1px',
     'load_more_border_color' => '#0f4973',
-    'load_more_text_color' => '#1e73be',
+    'load_more_text_color' => '#f79d9b',
     /*load more icon*/
     'load_more_text_font_size' => '14px',
     'load_more_wrap_hover_color' => 'transparent',
@@ -339,7 +339,7 @@ class WDIModelThemes_wdi {
     'header_text_padding' => 'length',//*
     'header_text_color' => 'color',//*
     'header_font_weight' => 'number',//*
-    'header_text_font_size' => 'length',///////////* 
+    'header_text_font_size' => 'length',///////////*
     'header_text_font_style' => 'string',///////////////////
     'follow_btn_border_radius'=>'number',
     'follow_btn_padding'=>'number',
@@ -519,7 +519,7 @@ class WDIModelThemes_wdi {
     'mas_thumb_user_color'=>'color',
     'mas_photo_img_hover_effect' => 'string',
     /////////////////////////////////////////////////
-    
+
     'blog_style_photo_wrap_padding' => 'length',
     'blog_style_photo_wrap_border_size' => 'length',
     'blog_style_photo_wrap_border_color' => 'color',
@@ -537,7 +537,7 @@ class WDIModelThemes_wdi {
     //////////////////////////////////////////
 
      /////////////////////////////////////////////////
-    
+
     'image_browser_photo_wrap_padding' => 'length',
     'image_browser_photo_wrap_border_size' => 'length',
     'image_browser_photo_wrap_border_color' => 'color',
@@ -585,7 +585,7 @@ public static function get_themes(){
   global $wpdb;
   $themes = WDILibrary::objectToArray($wpdb->get_results("SELECT `id`, `theme_name` FROM " . $wpdb->prefix.WDI_THEME_TABLE));
   foreach ($themes as $theme) {
-    $output[$theme['id']] = $theme['theme_name']; 
+    $output[$theme['id']] = $theme['theme_name'];
   }
   return $output;
 }

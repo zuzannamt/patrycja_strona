@@ -39,6 +39,7 @@ $footer_column = $edge_settings['edge_footer_column_section'];
 				echo '<div class="column-'.$footer_column.'">';
 					if ( is_active_sidebar( 'edge_footer_2' ) ) :
 						dynamic_sidebar( 'edge_footer_2' );
+						do_action('social_links');
 					endif;
 				echo '</div><!--end .column'.$footer_column.'  -->';
 				}
@@ -48,13 +49,6 @@ $footer_column = $edge_settings['edge_footer_column_section'];
 						dynamic_sidebar( 'edge_footer_3' );
 					endif;
 				echo '</div><!--end .column'.$footer_column.'  -->';
-				}
-				if($footer_column == '4'){
-				echo '<div class="column-'.$footer_column.'">';
-					if ( is_active_sidebar( 'edge_footer_4' ) ) :
-						dynamic_sidebar( 'edge_footer_4' );
-					endif;
-				echo '</div><!--end .column'.$footer_column.  '-->';
 				}
 				?>
 			</div> <!-- end .widget-area -->
