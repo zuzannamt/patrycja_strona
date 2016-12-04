@@ -2836,3 +2836,12 @@ div.bbp-template-notice, div.indicator-hint {
 #wdi_feed_0 .wdi_single_user .wdi_user_controls .wdi_follow_btn {
 	border-color: #f79d9b;
 	color: #f79d9b; }
+
+/*socoal links*/
+.social-links a { width: 150px; }
+.fa-instagram { padding-right: 10px; }
+
+
+
+
+
